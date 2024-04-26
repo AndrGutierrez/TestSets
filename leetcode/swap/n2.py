@@ -1,6 +1,5 @@
 def swap(nums, limit):
     valid_combinations = get_valid_combinations(nums, limit)
-    print(len(valid_combinations))
     for combination in valid_combinations:
         i, j = combination
         # print(nums)
@@ -43,3 +42,7 @@ class Solution(object):
         return nums
 
 
+if __name__ == "__main__":
+    sol = Solution()
+    r= sol.lexicographicallySmallestArray([6,5,3,9,8], 2)
+    print(r)
