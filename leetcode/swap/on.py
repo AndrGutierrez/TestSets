@@ -7,8 +7,6 @@ class Solution(object):
         """
         tuples = []
         for i in range(len(nums)): tuples.append((i, nums[i]))
-        unsorted_tuples = list(tuples)
-
         tuples = sorted(tuples, key=lambda x: x[1])
         groups = [[]]
 
@@ -21,9 +19,9 @@ class Solution(object):
     
         for group in groups:
             index_sorted_group = sorted(group, key=lambda x: x[0])
-            i=-1
+            i=0
             for item in group:
-                i+=1
                 res[index_sorted_group[i][0]] = item[1]
+                i+=1
         return res
 

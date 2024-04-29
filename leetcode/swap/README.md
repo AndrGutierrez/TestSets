@@ -1,9 +1,5 @@
 Make Lexicographically Smallest Array by Swapping Elements
-Attempted
-Medium
-Topics
-Companies
-Hint
+
 You are given a 0-indexed array of positive integers nums and a positive integer limit.
 
 In one operation, you can choose any two indices i and j and swap nums[i] and nums[j] if |nums[i] - nums[j]| <= limit.
